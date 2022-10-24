@@ -17,6 +17,38 @@
     content: "\f104"
 }
 
+.fa-facebook:before {
+    content: "\f09a"
+}
+.fa-instagram:before {
+    content: "\f16d"
+}
+
+.fa-vk:before {
+    content: "\f189"
+}
+
+.fa-telegram:before {
+    content: "\f2c6"
+}
+.fa-whatsapp:before {
+    content: "\f232"
+}
+
+.fa-bars:before {
+    content: "\f0c9"
+}
+
+.fa-xmark:before {
+    content: "\f00d"
+}
+.fa-chevron-left:before {
+    content: "\f053"
+}
+.fa-chevron-right:before {
+    content: "\f054"
+}
+
 /*---------------------------------*/
 
 

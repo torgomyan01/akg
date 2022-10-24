@@ -95,7 +95,8 @@ const costs = {
     bgBlur: 'bgBlur-',
     color: 'c-',
     bgc: 'bgc-',
-    fw: 'fw-'
+    fw: 'fw-',
+    zIndex: 'z-',
 }
 const allElem = document.querySelectorAll('body *');
 const head = document.head;
@@ -104,7 +105,9 @@ const sizes = [{sizeName: 'sm', size: 576}, {sizeName: 'md', size: 768}, {sizeNa
 
 const classTypes = [
     {minClass: 'h-', styleName: 'height'},
+    {minClass: 'mh-', styleName: 'max-height'},
     {minClass: 'w-', styleName: 'width'},
+    {minClass: 'mw-', styleName: 'max-width'},
     // MARGIN
     {minClass: 'me-', styleName: 'margin-right'},
     {minClass: 'ms-', styleName: 'margin-left'},
@@ -127,6 +130,7 @@ const classTypes = [
     {minClass: 'right-', styleName: 'right'},
     {minClass: 'bottom-', styleName: 'bottom'},
     {minClass: 'fw-', styleName: 'font-weight'},
+    {minClass: costs.zIndex, styleName: 'z-index'},
     {minClass: costs.color, styleName: 'color'},
     {minClass: costs.bgc, styleName: 'background-color'},
     {minClass: costs.bgBlur, styleName: 'backdrop-filter'},
@@ -188,6 +192,8 @@ function printStyle(type, className, percent, checkInp, classCount){
             return _colorBgc;
         case costs.bgBlur:
             return `blur(${percentOrRem})`;
+        case costs.zIndex:
+            return percentOrRem;
         default:
             return `${percentOrRem}`;
     }

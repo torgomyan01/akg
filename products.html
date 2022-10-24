@@ -36,7 +36,7 @@
 <body>
 
 
-<header>
+<header class="h-120">
   <video muted autoplay preload="auto">
     <source src="video/header.mp4" type="video/mp4">
   </video>
@@ -54,13 +54,13 @@
     </div>
     <nav class="d-none d-md-block">
       <div class="container d-flex justify-content-center align-items-center mt-3">
-        <a href="/" class="c-white me-5 trans">ԳԼԽԱՈՐ</a>
+        <a href="#" class="c-white me-5 trans">ԳԼԽԱՈՐ</a>
         <a href="#about-us" class="c-white me-5 trans">ՄԵՐ ՄԱՍԻՆ</a>
         <a href="/" class="me-5">
           <img src="images/logo-site.png" class="w-120" alt="Logo Site">
         </a>
-        <a href="#" class="c-white me-5 trans">ԱՐՏԱԴՐԱՆՔ</a>
-        <a href="products.html" class="c-white me-5 trans">ՆՈՐՈՒՅԹ</a>
+        <a href="products.html" class="c-white me-5 trans fw-bold">ԱՐՏԱԴՐԱՆՔ</a>
+        <a href="#" class="c-white me-5 trans">ՆՈՐՈՒՅԹ</a>
       </div>
     </nav>
 
@@ -68,17 +68,6 @@
       <i class="fa-regular fa-bars"></i>
     </div>
 
-    <div class="container mt-150">
-     <div class="%w-99 %w-md-60">
-       <h1 class="fs-35 fs-md-40 c-white mb-2 fw-bold text-center text-md-start">ԿՈՆՅԱԿ ԵՎ ԿՈՆՅԱԿԻ ՆՎԵՐՆԵՐ</h1>
-       <p class="c-white fw-light text-center text-md-start">
-         Brandy Gift - ը պարունակում է կոնյակի և կոնյակի նվերների լայն տեսականի, այնպես որ դուք կարող եք գտնել կատարյալ
-         նվերը, անկախ նրանից, թե որ տեսակին էլ նախընտրում եք, և անկախ ձեր բյուջեից: Մեր ընտրանին ներառում է կոնյակի և
-         կոնյակի նվերների հավաքածուներ շքեղ փաթեթավորմամբ, ինչպիսիք են փայտե տուփերը, նվերների տուփերը և հյուսած
-         զամբյուղները:
-       </p>
-     </div>
-    </div>
   </div>
 </header>
 
@@ -86,7 +75,7 @@
   <div class="c-white fs-50 position-absolute left-20 top-20" id="close-mobile-menu">
     <i class="fa-regular fa-xmark"></i>
   </div>
-  <a href="/">
+  <a href="#">
     <div class="border-bottom-grey text-center text-uppercase c-white fs-28 py-3">
       ԳԼԽԱՈՐ
     </div>
@@ -96,7 +85,7 @@
       ՄԵՐ ՄԱՍԻՆ
     </div>
   </a>
-  <a href="products.html">
+  <a href="#">
     <div class="border-bottom-grey text-center text-uppercase c-white fs-28 py-3">
       ԱՐՏԱԴՐԱՆՔ
     </div>
@@ -122,39 +111,21 @@
   </div>
 </div>
 
-<div class="container mw-1520">
-  <div class="header-products d-flex justify-content-center align-items-center w-100 h-300 py-5">
-    <for count="10">
-      <div class="d-flex justify-content-center align-items-center">
-        <a href="#" class="def-shadow me-0 me-sm-3 w-200 w-xl-300 h-200 h-xl-300 br-20 bgc-white d-flex justify-content-center align-items-center overflow-hidden">
-          <img src="images/product1.png" alt="Product" class="w-50">
-        </a>
-      </div>
-    </for>
+
+
+<div class="container mt-50">
+  <div aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Գլխաոր</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Արտադրանք</li>
+    </ol>
   </div>
 </div>
 
-<div class="container mt-0 !mt-lg-100" style="transform: translateY(-6.25rem)" id="about-us">
-  <div class="row">
-    <div class="col-12 col-md-5 d-none d-md-block">
-      <img src="images/about-us.png" alt="about us " class="w-100">
-    </div>
-    <div class="col-12 col-md-7">
-      <h2 class="fs-50 fw-bold text-center text-md-start">
-        ՄԵՐ ՄԱՍԻՆ
-      </h2>
-      <div class="d-flex d-md-none justify-content-center align-items-center my-3">
-        <img src="images/about-us.png" alt="about us " class="w-100">
-      </div>
-      <p>
-        Brandy Gift - ը պարունակում է կոնյակի և կոնյակի նվերների լայն տեսականի, այնպես որ դուք կարող եք գտնել կատարյալ նվերը, անկախ նրանից, թե որ  տեսակին էլ նախընտրում եք, և անկախ ձեր բյուջեից: Մեր ընտրանին ներառում է կոնյակի և կոնյակի նվերների հավաքածուներ շքեղ փաթեթավորմամբ, ինչպիսիք են փայտե տուփերը, նվերների տուփերը և հյուսած զամբյուղները:
-      </p>
-    </div>
-  </div>
-
+<div class="container mt-150" style="transform: translateY(-6.25rem)" id="about-us">
 
   <div class="row  mt-5 mt-md-0">
-    <for count="6">
+    <for count="12">
       <div class="col-12 col-sm-6 col-md-4 mb-4">
         <a href="#" class="d-block def-shadow w-100 br-20 p-3">
           <div class="w-100 d-flex justify-content-center">
@@ -171,10 +142,33 @@
     </for>
 
     <div class="col-12 d-flex justify-content-center align-items-center mt-3">
-      <button class="border-0 py-1 px-4 bgc-darkGreen c-white fs-20">ՏԵՍՆԵԼ ԲՈԼՈՐԸ</button>
+      <button class="border-darkGreen bgc-transparent c-darkGreen w-30 h-30 me-2" disabled>
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="border-darkGreen bgc-darkGreen c-white w-30 h-30 me-2">1</button>
+      <button class="border-darkGreen bgc-transparent c-darkGreen w-30 h-30 me-2">2</button>
+      <button class="border-darkGreen bgc-transparent c-darkGreen w-30 h-30 me-2">3</button>
+      <button class="border-darkGreen bgc-transparent c-darkGreen w-30 h-30 me-2">4</button>
+      <button class="border-darkGreen bgc-transparent c-darkGreen w-30 h-30 me-2">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
   </div>
 
+</div>
+
+<div class="container mb-100">
+  <div class="fs-35 fs-sm-50 fw-bold c-darkGreen mb-2 text-center">
+    ԻՆՉՈՒ ԸՆՏՐԵԼ ՄԵԶ
+  </div>
+  <div class="text-center c-darkGreen w-100 mw-800 m-auto text-bottom-shadow">
+    Lörem ipsum sall lavade. Hypoligen krodat, abelt. Sagen dutinde. Kin ibel: i prodel pist.
+    Multide trafuns, såsom tiv. Pena hemina traligt. Kontrade rönunde antemande. Besamma hydona.
+    Pressade. Bidat säking kron. Opadat kontraningar. Tåvis lynygon, tisk. Du kan vara drabbad.
+  </div>
+  <div class="mt-3 text-center">
+    <span class="c-darkGreen cursor-pointer" id="show-seo-text">Կարդալ ավելին</span>
+  </div>
 </div>
 
 
@@ -255,7 +249,7 @@
     Pressade. Bidat säking kron. Opadat kontraningar. Tåvis lynygon, tisk. Du kan vara drabbad.
   </div>
   <div class="mt-3 text-center">
-    <button class="border-1 bgc-transparent c-white border py-1 px-5">Ուղարկել</button>
+    <span class="c-darkGreen cursor-pointer" id="show-seo-text">Կարդալ ավելին</span>
   </div>
 </div>
 
