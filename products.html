@@ -36,48 +36,36 @@
 <body>
 
 
-<component src="components/navbar.html"></component>
+<component src="components/navbar-min.html"></component>
 
 
-
-  <div class="container mt-50 d-flex justify-content-between">
-    <div aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Գլխաոր</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Արտադրանք</li>
-      </ol>
-    </div>
-    <div class="dropdown">
-      <button class="btn btn-outline-success border-darkGreen c-dark-green dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fa-regular fa-bars-filter me-2"></i>
-        Ֆիլտր
-
-        <i class="fa-regular fa-chevron-down ms-4"></i>
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Ըստ գնի</a></li>
-        <li><a class="dropdown-item" href="#">Ըստ տարիքի</a></li>
-      </ul>
-    </div>
+<div class="container mt-50 d-flex justify-content-between">
+  <div aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Գլխաոր</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Արտադրանք</li>
+    </ol>
   </div>
+  <div class="dropdown">
+    <button class="btn btn-outline-success border-darkGreen c-dark-green dropdown-toggle" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa-regular fa-bars-filter me-2"></i>
+      Ֆիլտր
+
+      <i class="fa-regular fa-chevron-down ms-4"></i>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Ըստ գնի</a></li>
+      <li><a class="dropdown-item" href="#">Ըստ տարիքի</a></li>
+    </ul>
+  </div>
+</div>
 
 <div class="container mt-150" style="transform: translateY(-6.25rem)" id="about-us">
 
   <div class="row  mt-5 mt-md-0">
     <for count="12">
-      <div class="col-12 col-sm-6 col-md-4 mb-4">
-        <a href="#" class="d-block def-shadow w-100 br-20 p-3">
-          <div class="w-100 d-flex justify-content-center">
-            <img src="images/product1.png" alt="Product">
-          </div>
-          <p class="mt-3 fs-22 fw-400 c-black">
-            Hennessy VS Cognac 70cl & Truffles, Փայտե տուփ
-          </p>
-          <p class="fw-bold fs-25 mt-2 c-black">
-            31.576 ֏
-          </p>
-        </a>
-      </div>
+      <component src="components/product-block.html"></component>
     </for>
 
     <div class="col-12 d-flex justify-content-center align-items-center mt-3">
