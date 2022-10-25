@@ -185,3 +185,10 @@ header{
 .border-darkGreen{
   border: 1px solid #044343;
 }
+
+.dropdown-toggle{
+  &:after{
+    content: unset;
+
+  }
+}

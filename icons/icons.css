@@ -49,6 +49,15 @@
     content: "\f054"
 }
 
+.fa-bars-filter:before {
+    content: "\e0ad"
+}
+
+
+.fa-chevron-down:before {
+    content: "\f078"
+}
+
 /*---------------------------------*/
 
 
